@@ -1,0 +1,29 @@
+.balances{
+    &-container{
+        margin-top: 20px;
+    }
+    &-info{
+        display: flex;
+        margin: 15px;
+        font-size: 20px;
+        justify-content: space-around;
+        .label{
+            font-size: 16px;
+            color: black;
+        }
+        .incoming, .outgoing{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .incoming{
+            color: seagreen;
+        }
+        .outgoing{
+            color: #d20000;
+        }
+        .divider{
+            border-left: 1px solid #d20000;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.overview {
+    &-info{
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+
+        .amount-display {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .show-transactions{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-amount {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #d20000;
+    }
+    &-desc {
+        font-size: 12px;
+    }
+}
+
+.green {
+    color: seagreen;
+}
