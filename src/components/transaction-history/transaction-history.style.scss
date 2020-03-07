@@ -1,0 +1,17 @@
+.history{
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    .header{
+        padding: 10px;
+        border-bottom: 1px solid #d5d7dc;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Cabin';
+        margin: 0px -10px;
+    }
+    .list{
+        max-height: 15vh;
+        overflow-y: auto;
+    }
+}

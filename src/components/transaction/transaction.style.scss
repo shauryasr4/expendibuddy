@@ -1,0 +1,32 @@
+.transaction-list-card{
+    margin: 10px 0;
+    &-content{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        .delete-button{
+            position: absolute;
+            left: 0;
+            padding: 2px 5px;
+            background: red;
+            color: white;
+            font-size: 12px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .visible{
+            opacity: 1;
+            pointer-events: initial;
+        }
+    }
+}
+
+.debit-border{
+    border-right: 5px solid #d20000;
+}
+
+.credit-border{
+    border-right: 5px solid seagreen;
+}

@@ -11,19 +11,24 @@
             font-size: 16px;
             color: black;
         }
-        .incoming, .outgoing{
+        .credit, .debit{
             display: flex;
             flex-direction: column;
             text-align: center;
         }
-        .incoming{
+        .credit{
             color: seagreen;
         }
-        .outgoing{
+        .debit{
             color: #d20000;
         }
         .divider{
-            border-left: 1px solid #d20000;
+            &-debit{
+                border-left: 1px solid #d20000;
+            }
+            &-credit{
+                border-left: 1px solid seagreen;
+            }
         }
     }
 }
