@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import './transaction-history.style.scss';
 import { Transaction } from '../transaction/transaction.component';
 
@@ -6,7 +6,11 @@ import { TransactionContext } from '../../context/transactions.context';
 
 export const TransactionHistory = ({transactionList}) => {
 
-    const {transactions} = useContext(TransactionContext);
+    const {transactions, getTransactions} = useContext(TransactionContext);
+
+    useEffect(() => {
+        getTransactions();
+    }, []);
 
     return (
         <div className='history'>
@@ -17,7 +21,7 @@ export const TransactionHistory = ({transactionList}) => {
                 {
                     transactions.map(function(transaction) {
                         return <Transaction 
-                            key={transaction.id} 
+                            key={transaction._id} 
                             transaction={transaction}
                         />
                     })

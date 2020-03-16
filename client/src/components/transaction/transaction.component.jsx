@@ -10,7 +10,7 @@ export const Transaction = ({ transaction }) => {
 
     const [displayDelete, setDisplayDelete] = useState(false);
 
-    const {description, amount, id} = transaction;
+    const {description, amount, _id} = transaction;
 
     const getBorderColour = function () {
         return amount > 0 ? 'credit-border' : 'debit-border';
@@ -31,7 +31,7 @@ export const Transaction = ({ transaction }) => {
 
     const deleteTransactionById = function(event) {
         event.stopPropagation();
-        deleteTransaction(id);
+        deleteTransaction(_id);
     }
 
     return (
